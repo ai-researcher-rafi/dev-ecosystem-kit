@@ -1,44 +1,58 @@
-<!-- Modern Pro Pricing Card with Tailwind CSS -->
-<div class="max-w-sm bg-slate-900 border border-slate-800 rounded-3xl p-8 text-white relative overflow-hidden shadow-lg shadow-blue-950/20 group">
-  <!-- Feature Badge -->
-  <div class="absolute -right-16 top-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-xs font-bold py-1.5 px-16 rotate-45 tracking-wide shadow-md">
-    POPULAR
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Pricing Card</title>
+  <!-- Tailwind CSS CDN Link (This will activate the design.) -->
+  <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 min-h-screen flex items-center justify-center p-6">
 
-  <div class="space-y-4">
-    <h3 class="text-lg font-semibold text-blue-400 uppercase tracking-wider">Pro Plan</h3>
-    <p class="text-sm text-slate-400">Perfect for growing startups, independent developers, and small active teams.</p>
-    
-    <div class="flex items-baseline gap-1 pt-2">
-      <span class="text-5xl font-black tracking-tight">$49</span>
-      <span class="text-sm font-medium text-slate-400">/ month</span>
+  <!-- Modern Pro Pricing Card with Tailwind CSS -->
+  <div class="max-w-sm bg-slate-900 border border-slate-800 rounded-3xl p-8 text-white relative overflow-hidden shadow-lg shadow-blue-950/20 group">
+    <!-- Feature Badge -->
+    <div class="absolute -right-16 top-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-xs font-bold py-1.5 px-16 rotate-45 tracking-wide shadow-md">
+      POPULAR
+    </div>
+
+    <div class="space-y-4">
+      <h3 class="text-lg font-semibold text-blue-400 uppercase tracking-wider">Pro Plan</h3>
+      <p class="text-sm text-slate-400">Perfect for growing startups, independent developers, and small active teams.</p>
+      
+      <div class="flex items-baseline gap-1 pt-2">
+        <span class="text-5xl font-black tracking-tight">$49</span>
+        <span class="text-sm font-medium text-slate-400">/ month</span>
+      </div>
+    </div>
+
+    <!-- Included Features List -->
+    <ul class="mt-8 space-y-4 text-sm font-medium text-slate-300 border-t border-slate-800 pt-6">
+      <li class="flex items-center gap-3">
+        <svg class="w-5 h-5 text-blue-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+        Unlimited Git Projects & Repositories
+      </li>
+      <li class="flex items-center gap-3">
+        <svg class="w-5 h-5 text-blue-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+        100 GB High-Speed Production Hosting
+      </li>
+      <li class="flex items-center gap-3">
+        <svg class="w-5 h-5 text-blue-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+        Advanced DevOps CI/CD Automation
+      </li>
+      <li class="flex items-center gap-3 text-slate-500 line-through">
+        <svg class="w-5 h-5 text-slate-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+        24/7 Dedicated Enterprise Support
+      </li>
+    </ul>
+
+    <!-- CTA Action Button -->
+    <div class="mt-8">
+      <button class="w-full py-3.5 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold rounded-xl shadow-lg shadow-blue-500/20 hover:scale-[1.02] transition-all duration-200">
+        Get Started Now
+      </button>
     </div>
   </div>
 
-  <!-- Included Features List -->
-  <ul class="mt-8 space-y-4 text-sm font-medium text-slate-300 border-t border-slate-800 pt-6">
-    <li class="flex items-center gap-3">
-      <svg class="w-5 h-5 text-blue-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-      Unlimited Git Projects & Repositories
-    </li>
-    <li class="flex items-center gap-3">
-      <svg class="w-5 h-5 text-blue-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-      100 GB High-Speed Production Hosting
-    </li>
-    <li class="flex items-center gap-3">
-      <svg class="w-5 h-5 text-blue-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-      Advanced DevOps CI/CD Automation
-    </li>
-    <li class="flex items-center gap-3 text-slate-500 line-through">
-      <svg class="w-5 h-5 text-slate-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-      24/7 Dedicated Enterprise Support
-    </li>
-  </ul>
-
-  <!-- CTA Action Button -->
-  <div class="mt-8">
-    <button class="w-full py-3.5 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold rounded-xl shadow-lg shadow-blue-500/20 hover:scale-[1.02] transition-all duration-200">
-      Get Started Now
-    </button>
-  </div>
-</div>
+</body>
+</html>
