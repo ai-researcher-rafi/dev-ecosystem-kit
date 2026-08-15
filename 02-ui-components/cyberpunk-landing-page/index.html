@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev-Ecosystem-Kit // Neo Dashboard</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#030712] text-slate-100 min-h-screen overflow-x-hidden font-sans">
+
+  <!-- Glow Background Effect -->
+  <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+  <div class="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-cyan-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+  <!-- Header Section -->
+  <header class="border-b border-purple-500/20 bg-slate-950/60 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-3 h-3 rounded-full bg-cyan-400 shadow-[0_0_10px_#06b6d4]"></div>
+        <span class="font-mono text-sm tracking-widest text-cyan-400 font-bold uppercase">DEV-ECOSYSTEM // v2026</span>
+      </div>
+      <a href="https://github.com" target="_blank" class="px-4 py-2 border border-cyan-500/30 rounded-lg text-xs font-mono text-cyan-400 hover:bg-cyan-500/10 transition-all duration-300 shadow-[0_0_15px_rgba(6,182,212,0.1)]">
+        GET MASTER REPO
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Grid Section -->
+  <main class="max-w-7xl mx-auto px-6 py-16 space-y-20">
+    
+    <div class="text-center max-w-3xl mx-auto space-y-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent uppercase font-mono">
+        Next-Gen Dev Architecture
+      </h1>
+      <p class="text-sm md:text-base text-slate-400 leading-relaxed max-w-xl mx-auto font-light">
+        A futuristic multi-agent automation kit featuring independent AI agents, zero-config boilerplate models, and production micro-interfaces.
+      </p>
+    </div>
+
+    <!-- Features Dashboard Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card 1: Gemini Shuttle -->
+      <div class="bg-slate-950/40 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all duration-500 group relative overflow-hidden backdrop-blur-sm">
+        <div class="absolute -right-4 -top-4 w-24 h-24 bg-cyan-500/5 rounded-full blur-xl group-hover:bg-cyan-500/10 transition-all"></div>
+        <div class="space-y-4">
+          <div class="text-xs font-mono text-cyan-400 tracking-wider">01 // AUTOMATION</div>
+          <h3 class="text-xl font-bold font-mono text-white tracking-wide group-hover:text-cyan-400 transition-colors">Gemini Git Shuttle</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Futuristic AI system analyzing localized workspaces to generate strict semantic code release logs automatically.</p>
+          <div class="pt-4 flex items-center justify-between border-t border-slate-900">
+            <span class="text-[10px] font-mono bg-cyan-950/50 border border-cyan-800/30 text-cyan-400 px-2 py-0.5 rounded">STATUS: DEPLOYED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Context Scraper -->
+      <div class="bg-slate-950/40 border border-slate-800 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-500 group relative overflow-hidden backdrop-blur-sm">
+        <div class="absolute -right-4 -top-4 w-24 h-24 bg-purple-500/5 rounded-full blur-xl group-hover:bg-purple-500/10 transition-all"></div>
+        <div class="space-y-4">
+          <div class="text-xs font-mono text-purple-400 tracking-wider">02 // AGENTIC ENGINE</div>
+          <h3 class="text-xl font-bold font-mono text-white tracking-wide group-hover:text-purple-400 transition-colors">Context Scraper</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Autonomous parsing agent crawling networks to extract raw text elements and formulate dynamic semantic reports.</p>
+          <div class="pt-4 flex items-center justify-between border-t border-slate-900">
+            <span class="text-[10px] font-mono bg-purple-950/50 border border-purple-800/30 text-purple-400 px-2 py-0.5 rounded">STATUS: OPERATIONAL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Autonomous Assistant -->
+      <div class="bg-slate-950/40 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all duration-500 group relative overflow-hidden backdrop-blur-sm">
+        <div class="absolute -right-4 -top-4 w-24 h-24 bg-emerald-500/5 rounded-full blur-xl group-hover:bg-emerald-500/10 transition-all"></div>
+        <div class="space-y-4">
+          <div class="text-xs font-mono text-emerald-400 tracking-wider">03 // INTEL INFRA</div>
+          <h3 class="text-xl font-bold font-mono text-white tracking-wide group-hover:text-emerald-400 transition-colors">Gemini Assistant</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Secure Node.js core interacting seamlessly with global LLM endpoints for hyper-fast workspace task management.</p>
+          <div class="pt-4 flex items-center justify-between border-t border-slate-900">
+            <span class="text-[10px] font-mono bg-emerald-950/50 border border-emerald-800/30 text-emerald-400 px-2 py-0.5 rounded">STATUS: ONLINE</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Live Preview Alert Banner -->
+    <div class="border border-purple-500/10 bg-gradient-to-r from-purple-950/20 to-slate-950/40 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(147,51,234,0.05)]">
+      <div class="space-y-2 text-center md:text-left">
+        <h4 class="text-lg font-bold font-mono tracking-wide text-white">Maintained by Md Rafikul Islam</h4>
+        <p class="text-xs text-slate-400 font-light">Explore advanced setups including secure JWT frameworks, optimized multi-stage Docker presets, and production CI lines.</p>
+      </div>
+      <a href="https://github.com" target="_blank" class="px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-mono font-bold text-xs rounded-xl shadow-lg shadow-purple-500/20 tracking-wider transition-all duration-300">
+        CONNECT PROFILE
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-slate-900 py-8 text-center text-[10px] font-mono text-slate-500 tracking-widest uppercase">
+    &copy; 2026 dev-ecosystem-kit // all rights reserved.
+  </footer>
+
+</body>
+</html>
