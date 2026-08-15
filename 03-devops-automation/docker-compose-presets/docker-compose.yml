@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # 🟢 Backend API Service (Node.js/Express)
+  api-server:
+    container_name: dev-api-container
+    build:
+      context: ../../01-boilerplates/node-express-api
+      dockerfile: ../../03-devops-automation/docker-presets/node.Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGO_URI=mongodb://db-user:db-pass@mongodb-container:2717/dev-db?authSource=admin
+      - JWT_SECRET=super_futuristic_secret_key_2026
+    entrypoint: ["npm", "run", "dev"]
+    volumes:
+      - ../../01-boilerplates/node-express-api:/app
+      - /app/node_modules
+    depends_on:
+      - database-server
+    networks:
+      - dev-network
+
+  # 🗄️ Database Service (MongoDB Core)
+  database-server:
+    image: mongo:6.0-alpine
+    container_name: mongodb-container
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=db-user
+      - MONGO_INITDB_ROOT_PASSWORD=db-pass
+      - MONGO_INITDB_DATABASE=dev-db
+    volumes:
+      - mongodb-data:/data/db
+    networks:
+      - dev-network
+
+networks:
+  dev-network:
+    driver: bridge
+
+volumes:
+  mongodb-data:
+    driver: local
