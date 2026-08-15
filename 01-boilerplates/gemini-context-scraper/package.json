@@ -1,0 +1,15 @@
+{
+  "name": "gemini-context-scraper",
+  "version": "1.0.0",
+  "description": "Futuristic AI-powered Autonomous Web Scraper and Context Analysis Agent using Gemini",
+  "main": "scraper.js",
+  "scripts": {
+    "scrape": "node scraper.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0",
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5"
+  }
+}
